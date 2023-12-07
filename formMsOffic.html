@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .Boox{
+    
+        width: 400px;
+        margin: 10PX auto;
+        border: 2px solid;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 10PX;
+        box-shadow: 0 15px 25px rgba(0,0,0, 0.6);
+        background-color: rgba(0,0,0, 0.5);
+        color: #fff;
+        transform: translate(0%, 0%);
+        background-image: url(./img/Moon-Wallpapers-Free.jpg);
+    
+    }
+    .a1{
+     text-align: center;
+     color:#03e9f4;
+     outline: 2px solid;
+     border-radius: 20px;
+    }
+    .a2{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        height: 25px;
+        width: 400px;
+        border-radius: 10px;
+        font-size: 20px;
+        background: transparent;
+        margin: 2%;
+    
+    }
+    .a5{
+        height: 25px;
+        width: 400px;
+        border-radius: 10px;
+        font-size: small;
+        background: transparent;
+        border: 1px #fff solid;
+        
+
+    }
+    .a3{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        width: 100px;
+            color: rgb(22, 2, 2);
+            background-color:#03e9f4;
+            border-radius: 10px;
+            margin: 10px auto;
+            font-size: 20px;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    select{
+        border: solid #00ffff;
+    border-radius: 10% 10%;
+    background-color: #03e9f4;
+    border-radius: 5px;
+    font-size: 15px;
+    }
+    button{
+        border: solid #00ffff;
+    border-radius: 10% 10%;
+    background-color: #03e9f4;
+    
+    }
+
+    button:hover{
+        color: white;
+             background: #03e9f4;
+             box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4 ;
+    }
+
+    .a3:hover{
+        color: white;
+             background: #03e9f4;
+             box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4 ;
+    }
+    body{
+        background-image: url(./img/Moon-Wallpapers-Free.jpg);
+    }
+</style>
+<body>
+    <div class="contanir">
+        <div class="Boox">
+            <form action="GET">
+                <h1 class="a1">Registation Form Ms Office</h1>
+                <label class="a2" for="Frist Name">Frist Name</label>
+                <input class="a5" type="text" placeholder="fris name" name="frist name">
+                <label class="a2" for="last Name">Last Name</label>
+                <input class="a5" type="text" placeholder="last name" name="last name">
+                <label class="a2" for="Paswoord">Pasword</label>
+                <input class="a5" type="password" name="Paswoord">
+                <label class="a2" for="Email">Email</label>
+                <input class="a5" type="Email" placeholder="abc@gmail.com" name="Email">
+
+                <legend class="a2">Gents</legend>
+                <input type="radio" name="ali">
+                <label  for="">male</label>
+                <input  type="radio" name="ahmed">
+                <label  for="">female</label>
+                <br>
+
+
+                <h2 class="a1">corse</h2>
+                <input type="checkbox" name="ali">
+                <label for="">MS Word</label>
+                <input type="checkbox" name="akram">
+                <label for="">Ms Excal</label>
+                <input type="checkbox" name="tanveer">
+                <label for="">Power point</label>
+                <input type="checkbox" name="hassan">
+                <label for="">C++</label>
+                <label class="a2" for="DATE">DATE</label>
+                <input class="a2" type="date" name="date">
+                <input name="username" type="file" name="file">
+
+                <select>
+                    <option >Province</option>
+                    <option >Skardu</option>
+                    <option >gilgit</option>
+                    <option >Shiger</option>
+                    <option >Khaplu</option>
+                </select>
+
+                <input class="a3" type="submit" value="Register" name="Register">
+                <button class="a3">Reset</button>
+                <button class="a3">Forgat Paswoord</button>
+        
+            </form>
+        </div>
+    </div>
+</body>
+</html>

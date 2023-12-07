@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        * {
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/Moon-Wallpapers-Free.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #00ffff;
+    margin-left: 2%;
+    padding: 20px;
+    padding-top: 30px;
+}
+
+.search
+{
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    display: inline-block;
+    color: whitesmoke;
+    display: flex;
+    width: 20%;
+}
+#search_icon {
+    margin: 0px;
+    width: 30px;
+}
+.search input {
+    width: 100%;
+    color: #fff;
+    border: none;
+    border-bottom: 1px white solid;
+    outline: none;
+    background: transparent;
+}
+.search label {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+    margin: 0px;
+}
+
+.search input:focus ~label,
+ .search input:valid ~label {
+    top: -20px;
+    left: 28px;
+    color: #03e9f4;
+    font-size: 12px;
+
+}
+
+ul  {
+    margin-left: 10%;
+    padding: 0px;
+    list-style: none;
+    color: whitesmoke;
+    position: absolute;
+    top: 12%;
+    left: 15%;
+    right: 20%;
+}
+ul li {
+    float: left;
+    height: 20px;
+    line-height: 40px;
+    font-size: 20px;
+    margin-right: 7px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#main {
+    margin-left: 40px;
+}
+
+
+ul li a {
+    text-decoration: none;
+    display: block;
+}
+ul li a:hover {
+    text-decoration: underline;
+    color: #03e9f4;
+    transition: 0.5s ease;
+}
+
+.login-box {
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    width: 300px;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background: rgba(0,0,0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0, 0.6);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #00ffff;
+    text-align: center;
+}
+
+.login-box .user-box{
+    position: relative;
+}
+.login-box .user-box label {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px #fff solid;
+    outline: none;
+    background: transparent;
+}
+.submit {
+    text-align: center;
+    border: solid #00ffff;
+    border-radius: 10% 10%;
+    background-color: #03e9f4;
+    border-radius: 5px;
+}
+.submit a {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    width: 100% ;
+}
+
+.submit:hover {
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4 ;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0px;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+#submit1 {
+    position: absolute;
+    top: 80%;
+    left: 2%;
+    padding-right: 1.2%;
+    text-align: center;
+    border: solid #00ffff;
+    border-radius: 10%, 10%;
+    color: white;
+    border-radius: 5px;
+}
+
+#submit1 a{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    color: #03e9f4;
+    letter-spacing: 4px;
+    width: 100%;
+}
+#submit1 a:hover {
+    color: white;
+    background: #03e9f4;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4 ;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="h1">
+            <h1>Akram Khurrana</h1></div>
+        
+        <div class="search">
+            <img src="img/search_icon.png" alt="search_icon" id="search_icon"/>
+            <i class="fa fa-search"></i>
+            <input type="search" name="search" placeholder="search">
+           
+        </div>
+
+        <ul>
+            <li id="main"><a>Home</a></li>
+            <li id="main"><a class="a1" href="corse.html" >corse</a></li>
+            <li id="main"><a>About</a></li>
+            <li id="main"><a>Contact Us</a></li>
+            <li id="main"><a>News</a></li>
+        </ul>
+
+        <div class="login-box">
+            <h2>Login</h2>
+            <form>
+                <div class="user-box">
+                    <input type="text" required />
+                    <label>Username</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" required />
+                    <label>Password</label>
+                </div>
+                <div class="submit">
+                    <a href="#">
+                        Submit
+                    </a>
+                </div>
+            </form>
+        </div>
+        
+        <h2 style="color: white; position: absolute; top: 30%; left: 2%; font-size: 25pt;"> We Will Teach You </h2> 
+        <h3 style="color: #00ffff; position: absolute; top: 36%; left: 2%; font-size: 25pt;"> Ms Office and C++</h3> 
+            <p style="color: white; position: absolute; top: 42%; left: 2%; font-size: 27pt;"> And </p>
+        <h3 style="color: #00ffff; position: absolute; top: 48%; left: 2%; font-size: 29pt;"> Web Development </h3>
+            <p style="color: white; position: absolute; top: 54%; left: 2%; font-size: 31pt;"> Courses </p>
+
+        <div style="color: white; position:absolute; top: 62%; left: 2%; float: left; font-size: 13pt;">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis modi eligendi,<br>odio esse ex eius suscipit doloremque odit eveniet voluptate,quaerat ad voluptas<br>dolore quos, animi dolorem atque culpa nihil iusto accusantium.</p>
+        </div>
+
+        <div id="submit1">
+            <a href="#">More Info</a>            
+        </div>
+    </header>
+</body>
+</html>

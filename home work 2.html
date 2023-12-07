@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admission form</title>
+</head>
+<style>
+    .boox1{
+        width: 400px;
+        margin: 10PX auto;
+        border: 2px solid;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 30PX;
+        background-color: yellowgreen;
+    }
+    .a1{
+     text-align: center;
+     color:black;
+     outline: 2px solid;
+     border-radius: 20px;
+    }
+    .a2{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        height: 25px;
+        width: 400px;
+        border-radius: 10px;
+        font-size: large;
+    }
+    .a5{
+        height: 25px;
+        width: 400px;
+        border-radius: 10px;
+        font-size: large;
+
+    }
+    .a3{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        width: 100px;
+            color: rgb(22, 2, 2);
+            background-color:green;
+            border-radius: 10px;
+            margin: 10px auto;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        
+    <div class="boox1">
+        <form action="" method="GET">
+        
+        <h1 class="a1">Registation form Ms Office</h1>
+        <label class="a2" for="Frist Name">Frist NAme</label>
+        <input class="a5" type="text" name="fris name">
+        <label class="a2" for="last Name">Last NAme</label>
+        <input class="a5" type="text" name="last name">
+        <label class="a2" for="Number">Intermediate No</label>
+        <input class="a5" type="number" name="Intermediate number">
+        <label class="a2" for="Depertment">Depertment</label>
+        <input class="a5" type="text" name="Depertment">
+        <label class="a2" for="Paswoord">Paswoord</label>
+        <input class="a5" type="password" name="Paswoord">
+        <label class="a2" for="Email">Email</label>
+        <input class="a5" type="Email" placeholder="abc@gmail.com" name="Email">
+        <legend>Gents</legend>
+        <input type="radio" name="ali">
+        <label for="">male</label>
+        <input type="radio" name="ali">
+        <label for="">female</label>
+        <br>
+        <label class="a2" for="DATE">DATE</label>
+        <input class="a2" type="date">
+        <input name="username" type="file">
+        <select>
+            <option >Province</option>
+            <option >Skardu</option>
+            <option >gilgit</option>
+            <option >Shiger</option>
+            <option >Khaplu</option>
+        </select>
+        <input class="a4" type="submit" value="Register">
+        <button class="a3">Reset</button>
+        <button class="a3">Forgat Paswoord</button>
+
+     </form>
+        
+    </div>
+</div>
+    
+</body>
+</html>
